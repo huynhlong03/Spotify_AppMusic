@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="57dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Good Morning!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/newReleasesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Playlists"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/musiclist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="100dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:gravity="left|center"
+                    android:text="All Songs  💛"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:id="@+id/btnAllSong"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:text="Podcast  🎤 🤍"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:text="Dance Music  💃"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="-315dp"
+                    android:layout_marginTop="50dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:text="Radio  📻 "
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:text="Feature Song ❤"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="-315dp"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/btnFeatureSong" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/gray_strong"
+                    android:text="New Songs 💙"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/btnNewSong"
+                    />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp">
+
+                <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                android:id="@+id/constraintLayout"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintHorizontal_bias="1.0"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                tools:ignore="MissingConstraints">-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/newReleasesTextView"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Your Playlists"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textSize="15dp"-->
+                <!--                    android:layout_marginStart="20dp"-->
+                <!--                    android:layout_marginTop="60dp"-->
+                <!--                    />-->
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/topTypeRecyclerView"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/newReleasesTextView" />-->
+
+                <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/topAlbumTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Top Albums"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/topAlbumRecycleView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:tag="topAlbums"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/topAlbumTextView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+                    <TextView
+                        android:id="@+id/topArtistsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Top Artists"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/topArtistsRecycleView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:tag="topArtists"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/topArtistsTextView" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
